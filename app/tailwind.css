@@ -10,3 +10,9 @@ body {
     color-scheme: dark;
   }
 }
+
+@media (max-width: 640px) {
+  .hero {
+    background-position: right;
+  }
+}

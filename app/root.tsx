@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
+import { themeChange } from 'theme-change';
 import type { LinksFunction } from "@remix-run/cloudflare";
+
 import {
   Links,
   Meta,
@@ -6,6 +9,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import "./tailwind.css";
 
@@ -41,5 +47,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+
+    // Set the theme from localStorage on initial load
+    const localTheme = localStorage.getItem("theme") || "retro";
+    document.querySelector("html")?.setAttribute("data-theme", localTheme);
+  }, []);
+
+  return (
+    <Layout>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </Layout>
+  );
 }
