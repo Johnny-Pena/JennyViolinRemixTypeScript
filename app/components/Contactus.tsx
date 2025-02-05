@@ -61,7 +61,7 @@ export default function ContactForm() {
               <textarea
                 id="message"
                 name="message"
-                rows="6"
+                rows={6}
                 className="textarea textarea-bordered w-full"
                 placeholder="Your message here..."
                 required
