@@ -38,6 +38,22 @@ export default function ContactForm() {
               />
               <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
+            
+            <div className="form-control mb-6">
+              <label htmlFor="phone" className="label">
+                <span className="label-text">Phone Number</span>
+              </label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                className="input input-bordered w-full"
+                placeholder="Your phone number"
+                required
+              />
+              <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+            </div>
+            
             <div className="form-control mb-6">
               <label htmlFor="message" className="label">
                 <span className="label-text">Message</span>
