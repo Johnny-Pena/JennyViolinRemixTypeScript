@@ -55,7 +55,7 @@ export default function Navbar() {
               <li role="menuitem"><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost text-xl">Jenny Peña Violin</Link>
+          <Link to="/" className="btn btn-ghost text-s lg:text-xl">Jenny Peña Violin</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg font-medium" role="menubar">
@@ -71,7 +71,7 @@ export default function Navbar() {
             <span className="mr-2">🌞</span>
             <input
               type="checkbox"
-              className="toggle"
+              className="toggle toggle-sm md:toggle-md"
               onChange={handleToggle}
               checked={theme === "dracula"}
             />
