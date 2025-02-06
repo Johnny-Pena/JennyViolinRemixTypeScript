@@ -1,14 +1,16 @@
 import { Link } from "@remix-run/react";
 
+
 export default function LessonsTitlePage() {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl mt-8">
+    <div className="card lg:card-side bg-base-100 shadow-xl mt-8 lg:w-2/3">
       <div className="flex justify-center items-center p-4">
         <div className="w-full sm:w-3/4 lg:w-[560px] lg:h-[315px]">
           <iframe
             className="w-full h-[315px] lg:w-[560px] lg:h-[315px]"
             src="https://www.youtube.com/embed/WZYjDAODMfA?si=5lIiJDa9I3I3XaH1"
             title="YouTube video player"
+            loading="lazy"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -17,11 +19,9 @@ export default function LessonsTitlePage() {
         </div>
       </div>
       <div className="card-body">
-        <h2 className="card-title text font-bold text-4xl text-center">Start or continue your musical journey today!</h2>
+        <h2 className="card-title text font-bold text-4xl text-left">Start or continue your musical journey today!</h2>
         <p>
-          Jenny will help you achieve your musical goals whether
-          <br />
-          you are playing your first notes or refining virtuostic techniques.
+          Jenny will help you achieve your musical goals whether you are playing your first notes or refining virtuostic techniques.
         </p>
         <div className="card-actions justify-end">
           <Link to="/signUp">
