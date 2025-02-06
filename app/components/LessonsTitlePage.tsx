@@ -10,7 +10,6 @@ export default function LessonsTitlePage() {
             className="w-full h-[315px] lg:w-[560px] lg:h-[315px]"
             src="https://www.youtube.com/embed/WZYjDAODMfA?si=5lIiJDa9I3I3XaH1"
             title="YouTube video player"
-            loading="lazy"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
