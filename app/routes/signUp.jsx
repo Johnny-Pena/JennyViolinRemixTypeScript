@@ -9,7 +9,7 @@ export const meta = () => {
 
 export default function SignUp() {
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center bg-base-200 mt-14">
             <SignUpScript />
         </div>
     );
