@@ -2,9 +2,15 @@ import ContactForm from "../components/Contactus";
 
 export const meta = () => {
     return [
-        {title: 'Jenny Peña Music | Contact Us'},
-        {description: 'Contact Jenny Peña Music'},
-    
+        { title: "Jenny Peña Music | Contact Us" },
+        { name: "description", content: "Get in touch with Jenny Peña Music. Contact us for violin lessons, inquiries, and more." },
+        { name: "keywords", content: "Jenny Peña, contact, violin lessons, music inquiries, professional violinist" },
+        { property: "og:title", content: "Jenny Peña Music | Contact Us" },
+        { property: "og:description", content: "Get in touch with Jenny Peña Music. Contact us for violin lessons, inquiries, and more." },
+        { property: "og:image", content: "/assets/images/Jenny-Website-Grey.png" },
+        { property: "og:url", content: "https://jennypenaviolin.com/contact" }, 
+        { property: "og:type", content: "website" },
+        { rel: "canonical", href: "https://jennypenaviolin.com/contact" }
     ];
     };
 
